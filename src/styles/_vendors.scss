@@ -1,0 +1,14 @@
+// Overrrides theme colors of library bulma.io -> https://www.bulma.io
+$primary: $primary-color;
+$link: $blue-color;
+$info: $blue-ligth-color;
+$success: $green-ligth-color;
+$warning: $yellow-color;
+$danger: $red-color;
+// $dark: $grey-darker;
+$text: $text-color;
+
+@import "~node_modules/bulma/bulma.sass";
+
+$fa-font-path: "~node_modules/font-awesome/fonts";
+@import "~node_modules/font-awesome/scss/font-awesome";

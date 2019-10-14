@@ -1,0 +1,17 @@
+@import "./styles/_variables";
+@import "./styles/_vendors";
+@import "./styles/_functions";
+@import "./styles/_mixins";
+
+// components
+@import "./components/_container";
+
+// selector: .image.logo-image-128w > img {}
+.image {
+    &.logo-image-128w {
+        img {
+            width: 128px;
+            height: auto;
+        }
+    }
+}

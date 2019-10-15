@@ -14,7 +14,7 @@
             <!-- Form Login -->
             <div class="field">
                 <p class="control has-icons-left">
-                    <input class="input" type="text" placeholder="Nombre de usuario" />
+                    <input name="username" class="input" type="text" placeholder="Nombre de usuario" [(ngModel)]="data.username"/>
                     <span class="icon is-small is-left">
                         <i class="fa fa-lock"></i>
                     </span>
@@ -23,7 +23,7 @@
 
             <div class="field">
                 <p class="control has-icons-left">
-                    <input class="input" type="text" placeholder="Contraseña" />
+                    <input name="password" class="input" type="password" placeholder="Contraseña" [(ngModel)]="data.password"/>
                     <span class="icon is-small is-left">
                         <i class="fa fa-lock"></i>
                     </span>
@@ -32,7 +32,7 @@
 
             <div class="field">
                 <p class="control">
-                    <input class="button is-primary is-fullwidth" value="Iniciar sesión" />
+                    <input class="button is-primary is-fullwidth" value="Iniciar sesión" (click)="logIn()"/>
                 </p>
             </div>
             <!-- End Form Login -->

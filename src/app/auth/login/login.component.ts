@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  data: any = {
+  private data: any = {
     username: '',
     password: ''
   };

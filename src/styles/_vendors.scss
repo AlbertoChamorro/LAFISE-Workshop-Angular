@@ -8,6 +8,10 @@ $danger: $red-color;
 // $dark: $grey-darker;
 $text: $text-color;
 
+// menu component
+$menu-item-active-background-color: $active-link; 
+$breadcrumb-item-color: $primary-color;
+
 @import "~node_modules/bulma/bulma.sass";
 
 $fa-font-path: "~node_modules/font-awesome/fonts";

@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
 
   logIn = () => {
     console.log(this.data);
+    // http://localhost:9000/api/users?_embed=logins&username=achamorro&password=123456?is_unique=true
     this.router.navigate(['/admin']);
   }
 

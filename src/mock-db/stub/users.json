@@ -1,0 +1,39 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "achamorro",
+            "fullName": "Alberto Chamorro",
+            "password": "123456",
+            "isLocked": false
+        },
+        {
+            "id": 2,
+            "username": "destrada",
+            "fullName": "Daniel Estrada",
+            "password": "123456",
+            "isLocked": false
+        },
+        {
+            "id": 3,
+            "username": "tgonzales",
+            "fullName": "Tyrone Gonzales",
+            "password": "123456",
+            "isLocked": false
+        },
+        {
+            "id": 4,
+            "username": "jcuadra",
+            "fullName": "Jóse Cuadra",
+            "password": "123456",
+            "isLocked": false
+        },
+        {
+            "id": 5,
+            "username": "bloqueado",
+            "fullName": "Alex Cabrales",
+            "password": "123456",
+            "isLocked": true
+        }
+    ]
+}

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
+  selector: 'app-dashboard-navbar',
+  templateUrl: './navbar.component.html',
   styleUrls: []
 })
-export class AdminComponent implements OnInit {
+export class NavbarComponent implements OnInit {
 
   constructor() { }
 

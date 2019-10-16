@@ -1,0 +1,48 @@
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" routerLink="/">
+            <figure class="logo-image-128w">
+                <img class="image" src="/assets/logo.png" />
+            </figure>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="true"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <!-- <div class="navbar-start">
+                        <a class="navbar-item">
+                            Inicio
+                        </a>
+                    </div> -->
+
+        <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    <figure class="image is-32x32">
+                        <img class="is-rounded"
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Placeholder_no_text.svg">
+                    </figure>
+                    <span class="m-l-5">Maradiaga Velasquez</span>
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        <span><em class="fa fa-id-card m-r-5"></em> Mi Perfil</span>
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" routerLink="/auth/login">
+                        <figure class="image is-16x16">
+                            <img src="https://image.flaticon.com/icons/svg/126/126467.svg">
+                        </figure>
+                        <span class="m-l-5">Cerrar sesión</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

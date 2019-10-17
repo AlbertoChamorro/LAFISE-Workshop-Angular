@@ -14,22 +14,30 @@ export class LoginComponent implements OnInit {
     password: ''
   };
 
-  constructor(private router: Router, private authService: AuthService) { }
+  public isLoading: boolean;
+
+  constructor(private router: Router, private authService: AuthService) {
+    this.isLoading = false;
+  }
 
   ngOnInit() {
   }
 
   logIn = () => {
-    this.authService.logIn(this.data.username, this.data.password)
-    .subscribe(res => {
-      const data = res;
-      if (!data) {
-        console.log('No se encontró u');
-        return;
-      }
-      console.log(data);
-      this.router.navigate(['/admin']);
-    });
+    this.isLoading = true;
+    setTimeout(() => {
+      this.authService.logIn(this.data.username, this.data.password)
+        .subscribe(res => {
+          this.isLoading = false;
+          const data = res;
+          if (!data) {
+            console.log('No se encontró');
+            return;
+          }
+          console.log(data);
+          this.router.navigate(['/admin']);
+        });
+      }, 1500);
   }
 
 }

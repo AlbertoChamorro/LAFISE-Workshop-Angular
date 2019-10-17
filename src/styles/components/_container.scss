@@ -36,3 +36,7 @@ $positions: ('top','left','bottom','right');
         }
     }
 }
+
+.gradient-primary {
+    background: linear-gradient(to top, darken($primary-color, 10%), $primary-color, darken($primary-color, 5%));
+}

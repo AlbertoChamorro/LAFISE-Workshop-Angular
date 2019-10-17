@@ -1,5 +1,5 @@
 <div class="columns full-w-h">
-    <div class="column is-two-fifths hero is-primary is-fcentered">
+    <div class="column is-two-fifths hero is-primary gradient-primary is-fcentered">
         <figure class="logo-image-128w">
             <img class="image" src="/assets/logo.png" />
         </figure>
@@ -32,7 +32,12 @@
 
             <div class="field">
                 <p class="control">
-                    <input class="button is-primary is-fullwidth" value="Iniciar sesión" (click)="logIn()"/>
+                    <button class="button is-primary is-fullwidth"
+                            [ngClass]="{ 'is-loading': isLoading }"
+                            [disabled]="isLoading"
+                            (click)="logIn()">
+                            <span>Iniciar sesión <em [hidden]="isLoading" class="m-l-5 fa fa-chevron-right "></em></span>
+                    </button>
                 </p>
             </div>
             <!-- End Form Login -->

@@ -1,2 +1,72 @@
+<!-- TODO: Designed layout -->
 <app-dashboard-breadcrum [itemLinks]="['Banking', 'Administración', 'Productos']"></app-dashboard-breadcrum>
-<h3 class="subtitle is-3">Productos</h3>
+<h3 class="subtitle is-3 m-t-15">Productos</h3>
+
+<input class="input is-rounded" type="text" placeholder="Rounded input">
+
+<!-- Table -->
+<div class="table-container">
+    <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
+            <tr>
+                <th><abbr title="Position">Pos</abbr></th>
+                <th>Team</th>
+                <th><abbr title="Played">Pld</abbr></th>
+                <th><abbr title="Won">W</abbr></th>
+                <th><abbr title="Drawn">D</abbr></th>
+                <th><abbr title="Lost">L</abbr></th>
+                <th><abbr title="Goals for">GF</abbr></th>
+                <th><abbr title="Goals against">GA</abbr></th>
+                <th><abbr title="Goal difference">GD</abbr></th>
+                <th><abbr title="Points">Pts</abbr></th>
+                <th>Qualification or relegation</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th><abbr title="Position">Pos</abbr></th>
+                <th>Team</th>
+                <th><abbr title="Played">Pld</abbr></th>
+                <th><abbr title="Won">W</abbr></th>
+                <th><abbr title="Drawn">D</abbr></th>
+                <th><abbr title="Lost">L</abbr></th>
+                <th><abbr title="Goals for">GF</abbr></th>
+                <th><abbr title="Goals against">GA</abbr></th>
+                <th><abbr title="Goal difference">GD</abbr></th>
+                <th><abbr title="Points">Pts</abbr></th>
+                <th>Qualification or relegation</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <!-- class="is-selected"  -->
+            <tr>
+                <th>8</th>
+                <td>Liverpool</td>
+                <td>38</td>
+                <td>16</td>
+                <td>12</td>
+                <td>10</td>
+                <td>63</td>
+                <td>50</td>
+                <td>+13</td>
+                <td>60</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Pagination -->
+<nav class="pagination is-rounded" role="navigation" aria-label="pagination">
+    <a class="pagination-previous">Previous</a>
+    <a class="pagination-next">Next page</a>
+    <ul class="pagination-list">
+        <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+        <li><span class="pagination-ellipsis">&hellip;</span></li>
+        <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+        <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+        <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+        <li><span class="pagination-ellipsis">&hellip;</span></li>
+        <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+    </ul>
+</nav>

@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
           console.log(data);
           this.router.navigate(['/admin']);
         });
-      }, 1500);
+    }, 1500);
   }
 
 }

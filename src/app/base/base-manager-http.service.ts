@@ -1,9 +1,6 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-@Injectable()
-
-export class BaseManagerHttpService {
+export abstract class BaseManagerHttpService {
 
   protected BASE_URL: string;
 

@@ -1,4 +1,5 @@
 // Overrrides theme colors of library bulma.io -> https://www.bulma.io
+// https://thoughtbot.com/blog/controlling-color-with-sass-color-functions
 $primary: $primary-color;
 $link: $blue-color;
 $info: $blue-ligth-color;
@@ -11,6 +12,13 @@ $text: $text-color;
 // menu component
 $menu-item-active-background-color: $active-link; 
 $breadcrumb-item-color: $primary-color;
+
+// pagination component
+$pagination-current-background-color: $active-link;
+$pagination-current-border-color: darken($active-link, 2.5%);
+
+// Table component
+$table-row-active-background-color: lighten($primary-color, 7.5%);
 
 @import "~node_modules/bulma/bulma.sass";
 

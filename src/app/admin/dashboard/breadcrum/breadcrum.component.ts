@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-breadcrum',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  itemLinks: string[];
+  countItems: number;
+
+  constructor() {
+    this.itemLinks = this.itemLinks || [];
+  }
 
   ngOnInit() {
+    this.countItems = this.itemLinks.length;
   }
 
 }

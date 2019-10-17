@@ -10,7 +10,8 @@ module.exports = (req, res, next) => {
                     if (json.length === 1) {
                         return _send.call(this, JSON.stringify(json[0]))
                     } else if (json.length === 0) {
-                        return _send.call(this, '{}', 404)
+                        // return _send.call(this, '{}', 404)
+                        return _send.call(this, 'null');
                     }
                 }
             } catch (e) { }

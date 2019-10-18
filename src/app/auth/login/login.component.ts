@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
+import { NotifyServiceService } from 'src/app/base/notify-service.service';
 
 @Component({
   selector: 'app-login',
@@ -10,13 +11,13 @@ import { AuthService } from '../auth.service';
 export class LoginComponent implements OnInit {
 
   private data: any = {
-    username: '',
-    password: ''
+    username: 'achamorro',
+    password: '123456'
   };
 
   public isLoading: boolean;
 
-  constructor(private router: Router, private authService: AuthService) {
+  constructor(private router: Router, private authService: AuthService, private notifyService: NotifyServiceService) {
     this.isLoading = false;
   }
 
@@ -29,15 +30,19 @@ export class LoginComponent implements OnInit {
       this.authService.logIn(this.data.username, this.data.password)
         .subscribe(res => {
           this.isLoading = false;
-          const data = res;
+          const data = res.data;
           if (!data) {
-            console.log('No se encontró');
+            this.notifyService.error('Error al iniciar sesión', 'Usuario y/o contraseña inválidas, verifíque.');
             return;
           }
-          console.log(data);
+          if (data.isLocked) {
+            this.notifyService.error('Error al iniciar sesión', 'Su usuario esta bloqueado contáctanos al correo info@lafise.com');
+            return;
+          }
+          localStorage.setItem('accessToken', data.logins[0].accessToken || '');
           this.router.navigate(['/admin']);
         });
-    }, 1500);
+    }, 1000);
   }
 
 }

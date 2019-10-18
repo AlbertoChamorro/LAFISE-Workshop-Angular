@@ -24,3 +24,6 @@ $table-row-active-background-color: lighten($primary-color, 7.5%);
 
 $fa-font-path: "~node_modules/font-awesome/fonts";
 @import "~node_modules/font-awesome/scss/font-awesome";
+
+// Notify alert
+@import "~ngx-toastr/toastr";

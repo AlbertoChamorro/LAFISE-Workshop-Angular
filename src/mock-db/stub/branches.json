@@ -1,0 +1,32 @@
+{
+    "branches": [
+        {
+            "id": 100,
+            "name": "Sucursal Ciudad Jardín"
+        },
+        {
+            "id": 101,
+            "name": "Sucursal Radial Bolivar"
+        },
+        {
+            "id": 102,
+            "name": "Centro Financiero LAFISE"
+        },
+        {
+            "id": 103,
+            "name": "Bancentro Unión Europea"
+        },
+        {
+            "id": 104,
+            "name": "Sucursal Rubén Darío"
+        },
+        {
+            "id": 105,
+            "name": "Sucursal Carretera Norte"
+        },
+        {
+            "id": 106,
+            "name": "Sucursal Rubenia"
+        }
+    ]
+}

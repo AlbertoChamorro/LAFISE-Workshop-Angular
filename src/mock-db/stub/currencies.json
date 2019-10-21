@@ -1,0 +1,19 @@
+{
+    "currencies":[
+        {
+            "id": 1,
+            "name": "NIO",
+            "symbol": "C$"
+        },
+        {
+            "id": 2,
+            "name": "USD",
+            "symbol": "$"
+        },
+        {
+            "id": 3,
+            "name": "Euros",
+            "symbol": "€"
+        }
+    ]
+}

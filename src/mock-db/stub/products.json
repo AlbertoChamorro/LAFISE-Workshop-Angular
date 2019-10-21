@@ -1,0 +1,98 @@
+{
+    "products": [
+        {
+            "id": 1000,
+            "typeId": 3,
+            "subtypeId": 3000,
+            "description": "Tarjeta Infinite Visa",
+            "createdAt": "2019-07-15T19:43:37+0100",
+            "balances": [
+                {
+                    "minBalance": 1000,
+                    "currencyId": 1
+                },
+                {
+                    "minBalance": 200,
+                    "currencyId": 2
+                }
+            ],
+            "isEnable": true
+        },
+        {
+            "id": 1001,
+            "typeId": 3,
+            "subtypeId": 3001,
+            "description": "Tarjeta Signature Visa",
+            "createdAt": "2019-07-15T19:43:37+0100",
+            "balances": [
+                {
+                    "minBalance": 1200,
+                    "currencyId": 1
+                },
+                {
+                    "minBalance": 220,
+                    "currencyId": 2
+                }
+            ],
+            "isEnable": true
+        },
+        {
+            "id": 1002,
+            "typeId": 4,
+            "subtypeId": 4001,
+            "description": "Tarjeta Platinum Visa",
+            "createdAt": "2019-07-16T19:43:37+0100",
+            "balances": [
+                {
+                    "minBalance": 1500,
+                    "currencyId": 1
+                },
+                {
+                    "minBalance": 250,
+                    "currencyId": 2
+                }
+            ],
+            "isEnable": true
+        },
+        {
+            "id": 1003,
+            "typeId": 3,
+            "subtypeId": 3006,
+            "description": "Tarjeta Clásica Mastercard",
+            "createdAt": "2019-07-17T19:43:37+0100",
+            "balances": [
+                {
+                    "minBalance": 1800,
+                    "currencyId": 1
+                },
+                {
+                    "minBalance": 350,
+                    "currencyId": 2
+                }
+            ],
+            "isEnable": false
+        },
+        {
+            "id": 2000,
+            "typeId": 2,
+            "subtypeId": 2002,
+            "description": "Cuenta Corriente Premier Plus",
+            "createdAt": "2019-07-20T19:43:37+0100",
+            "balances": [
+                {
+                    "minBalance": 2000,
+                    "currencyId": 1
+                },
+                {
+                    "minBalance": 250,
+                    "currencyId": 2
+                },
+                {
+                    "minBalance": 500,
+                    "currencyId": 3
+                }
+            ],
+            "isEnable": false
+        }
+    ]
+}

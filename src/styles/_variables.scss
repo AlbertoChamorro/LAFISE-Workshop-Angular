@@ -17,5 +17,15 @@ $primary-color: $green-color;
 $primary-ligth-color: $green-ligth-color;
 $secondary-color: $green-dark-color;
 $text-color: $dark-gray-color;
+$border-color: darken($gray-color, 10%);
 $bg-color: $gray-color;
 $active-link: #88c526;
+
+// Margins
+$space-default: 8;
+
+// Border
+$semi-round: 5;
+$round: 15;
+
+$border-size-card: 1;

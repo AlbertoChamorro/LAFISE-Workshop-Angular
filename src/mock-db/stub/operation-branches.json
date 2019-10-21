@@ -1,0 +1,39 @@
+{
+    "operatonBranches": [
+        {
+            "branchId": 100,
+            "amount": 1010002.00,
+            "newClientNumberPerMonth": 25
+        },
+        {
+            "branchId": 101,
+            "amount": 2000000.00,
+            "newClientNumberPerMonth": 24
+        },
+        {
+            "branchId": 102,
+            "amount": 1850200.00,
+            "newClientNumberPerMonth": 25
+        },
+        {
+            "branchId": 103,
+            "amount": 980090.20,
+            "newClientNumberPerMonth": 18
+        },
+        {
+            "branchId": 104,
+            "amount": 1040000.00,
+            "newClientNumberPerMonth": 20
+        },
+        {
+            "branchId": 105,
+            "amount": 2556088.54,
+            "newClientNumberPerMonth": 28
+        },
+        {
+            "branchId": 106,
+            "amount": 999009.99,
+            "newClientNumberPerMonth": 32
+        }
+    ]
+}

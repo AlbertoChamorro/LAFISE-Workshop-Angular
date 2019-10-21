@@ -23,7 +23,7 @@
     min-width: 100%;
 }
 
-$sizes: (0,5,10,15,20,25,30,50);
+$sizes: (0,5,10,15,20,25,30, 35, 40, 45, 50);
 $positions: ('top','left','bottom','right');
 
 @each $size in $sizes {
@@ -39,4 +39,22 @@ $positions: ('top','left','bottom','right');
 
 .gradient-primary {
     background: linear-gradient(to top, darken($primary-color, 10%), $primary-color, darken($primary-color, 5%));
+}
+
+// override style class
+.level-item {
+    background: $bg-color;
+    margin: auto $space-default + px;
+    padding: ($space-default * 4) + px;
+    border-radius: $semi-round + px;
+    border: $border-size-card + px solid $border-color;
+
+    .description {
+        color: lighten($color: $text-color, $amount: 10);
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
 }

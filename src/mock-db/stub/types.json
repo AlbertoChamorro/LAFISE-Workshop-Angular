@@ -1,0 +1,29 @@
+{
+    "types": [
+        {
+            "id": 1,
+            "code": "CA",
+            "name": "Cuenta Ahorro"
+        },
+        {
+            "id": 2,
+            "code": "CC",
+            "name": "Cuenta Corriente"
+        },
+        {
+            "id": 3,
+            "code": "TC",
+            "name": "Tarjeta de Crédito"
+        },
+        {
+            "id": 4,
+            "code": "TD",
+            "name": "Tarjeta de Débito"
+        },
+        {
+            "id": 5,
+            "code": "PRT",
+            "name": "Prestamos"
+        }
+    ]
+}

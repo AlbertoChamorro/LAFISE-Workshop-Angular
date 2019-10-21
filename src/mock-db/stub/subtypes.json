@@ -1,0 +1,137 @@
+{
+    "subtypes": [
+        {
+            "id": 1000,
+            "typeId": 1,
+            "code": "AR",
+            "name": "Ahorro Regular",
+            "isEnable": true
+        },
+        {
+            "id": 1001,
+            "typeId": 1,
+            "code": "CU",
+            "name": "Cuenta Universal",
+            "isEnable": true
+        },
+        {
+            "id": 1002,
+            "typeId": 1,
+            "code": "CA",
+            "name": "Cuenta Amigo",
+            "isEnable": true
+        },
+        {
+            "id": 1003,
+            "typeId": 1,
+            "code": "CA",
+            "name": "Cuenta Universitaria",
+            "isEnable": true
+        },
+        {
+            "id": 2000,
+            "typeId": 2,
+            "code": "RGL",
+            "name": "Cuenta Regular",
+            "isEnable": true
+        },
+        {
+            "id": 2001,
+            "typeId": 2,
+            "code": "PMR",
+            "name": "Cuenta Premier",
+            "isEnable": true
+        },
+        {
+            "id": 2002,
+            "typeId": 2,
+            "code": "PMRP",
+            "name": "Cuenta Premier Plus",
+            "isEnable": true
+        },
+        {
+            "id": 3000,
+            "typeId": 3,
+            "code": "TCIV",
+            "name": "Infinite Visa",
+            "isEnable": true
+        },
+        {
+            "id": 3001,
+            "typeId": 3,
+            "code": "TCSV",
+            "name": "Signature Visa",
+            "isEnable": true
+        },
+        {
+            "id": 3002,
+            "typeId": 3,
+            "code": "TCPV",
+            "name": "Platinum Visa",
+            "isEnable": true
+        },
+        {
+            "id": 3003,
+            "typeId": 3,
+            "code": "TCDV",
+            "name": "Dorada Visa",
+            "isEnable": true
+        },
+        {
+            "id": 3004,
+            "typeId": 3,
+            "code": "TCBV",
+            "name": "Business Visa",
+            "isEnable": true
+        },
+        {
+            "id": 3005,
+            "typeId": 3,
+            "code": "TCDM",
+            "name": "Dorada MasterCard",
+            "isEnable": true
+        },
+        {
+            "id": 3006,
+            "typeId": 3,
+            "code": "TCCM",
+            "name": "Clásica MasterCard",
+            "isEnable": true
+        },
+        {
+            "id": 4000,
+            "typeId": 4,
+            "code": "TCV",
+            "name": "Clásica Visa",
+            "isEnable": true
+        },
+        {
+            "id": 4001,
+            "typeId": 4,
+            "code": "TPV",
+            "name": "Platinum Visa",
+            "isEnable": true
+        },
+        {
+            "id": 5001,
+            "typeId": 5,
+            "code": "PPL",
+            "name": "Prestamos personales",
+            "isEnable": true
+        },
+        {
+            "id": 5002,
+            "typeId": 5,
+            "code": "PVD",
+            "name": "Prestamos de vivienda",
+            "isEnable": true
+        },
+        {
+            "id": 5003,
+            "typeId": 5,
+            "code": "PVH",
+            "name": "Prestamos de vehículo",
+            "isEnable": true
+        }
+    ]
+}

@@ -40,6 +40,7 @@ export class LoginComponent implements OnInit {
             return;
           }
           localStorage.setItem('accessToken', data.logins[0].accessToken || '');
+          this.notifyService.success('Bienvenido', `Bienvenido ${data.fullName}`);
           this.router.navigate(['/admin']);
         });
     }, 1000);

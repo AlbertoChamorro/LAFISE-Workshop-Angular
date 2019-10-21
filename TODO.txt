@@ -1,0 +1,55 @@
+1. Abra el directorio admin/home y integre el listado haciendo uso de los mocks `branches.json` y `operation-branches.json` que contine indicadores por cada sucursal, aplique directivas pipes para los montos.
+
+Indicadores:
+_____________________________
+    1. Superavit (bonificacion): mayor a 2, 500, 0000
+    3. En condiciones normales: 1,000,000 - 2, 500, 0000
+    2. Deficit operativo: menor a 1,000,000 
+
+Mínimo de clientes: 25 para todas las sucursales
+
+Decorarlo haciendo uso de directivas:
+    - Rojo el Deficit,
+    - Azul Condiciones normales
+    - en Verde Superavit 
+
+2. Abra el directorio de admin/products y integre el listado haciendo uso de los mocks `currency.json` `types.json`, `subtypes.json` y `products.json`, realice el CRUD tomando en cuenta la siguiente estructura.
+
+    ```
+        {
+            "id": 1000,
+            "typeId": 3,
+            "subtypeId": 3000,
+            "description": "Tarjeta Infinite Visa",
+            "createdAt": "2019-07-15T19:43:37+0100",
+            "balances": [
+                {
+                    "minBalance": 1000,
+                    "currencyId": 1
+                },
+                {
+                    "minBalance": 200,
+                    "currencyId": 2
+                }
+            ],
+            "isEnable": true
+        }
+    ```
+
+Nota: 
+    Debe agregar una columna al final de la tabla que diga `acciones` y colocar 3 iconos o botones para editar, ver detalle y eliminar.
+    Debe agregar el boton de agregar nuevo registro en la pantalla del listado, y redireccionar al formulario, diseñe su configuracion de rutas
+        `admin/products/new` para crear un nuevo producto
+        `admin/products/detail/:id` para ver la informacion de un producto
+        `admin/products/edit/:id` para actualizar la informacion de un producto
+
+    Validaciones: 
+        1. Todos los campos son requeridos a excepcion de la descripcion
+        2. Los subtipos son filtrados segun el tipo seleccionado previamente
+        3. En el arreglo de balances no debe permitir duplicaciones de monedas, ni montos menores a cero.
+        4. La descripcion no debe exceder los 250 caracteres, puede aplicar una directiva para validarlo.
+        5. La fecha debe ser enviada en el formato con el timeZone y debe mostrarla formateada segun la zona donde el cliente esta consultando, puede usar la libreria https://momentjs.com/
+        6. La fecha de creacion se debe setear internamente y actualizarla cuando se actualice un registro.
+
+
+3. Aplique el diseño basado en layout para agregar el nuevo CRUD de empleados, refactorice el de productos haciendo este cambio.

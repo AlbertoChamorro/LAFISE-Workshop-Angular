@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { ToastrModule } from 'ngx-toastr';
+import { BaseCommonModule } from './base/common-app.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +13,9 @@ import { ToastrModule } from 'ngx-toastr';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot({
-      preventDuplicates: true
-    }),
     AppRoutingModule
   ],
+  exports: [BaseCommonModule],
   providers: [],
   bootstrap: [AppComponent]
 })

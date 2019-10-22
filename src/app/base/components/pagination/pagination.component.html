@@ -1,0 +1,15 @@
+<!-- Pagination -->
+<ng-container *ngIf="totalCount > 0">
+    <nav class="pagination is-rounded m-l-30 m-r-35" role="navigation" aria-label="pagination">
+        <a class="pagination-previous" (click)="onSelectItem(previousPage)">Anterior</a>
+        <a class="pagination-next" (click)="onSelectItem(nextPage)">Siguiente</a>
+        <ul class="pagination-list">
+            <ng-container *ngFor="let page of numberPages.toArray()">
+                <li>
+                    <a class="pagination-link" [ngClass]="{ 'is-current': currentPage == page }"
+                        (click)="onSelectItem(page)">{{ page }}</a>
+                </li>
+            </ng-container>
+        </ul>
+    </nav>
+</ng-container>

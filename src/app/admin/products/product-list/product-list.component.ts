@@ -9,14 +9,16 @@ import { Product } from '../product';
 })
 export class ProductListComponent implements OnInit {
   public isLoading: boolean;
-
-  @Input()
+  public pageSize: number;
+  public records: Product[];
   public productList: Product[];
 
   constructor(private productService: ProductService, private notifyService: NotifyServiceService) {
     this.isLoading = false;
-
-   }
+    this.productList = [];
+    this.records = [];
+    this.pageSize = 2;
+  }
 
   ngOnInit() {
     this.getAllProducts();
@@ -33,10 +35,14 @@ export class ProductListComponent implements OnInit {
             this.notifyService.error('Error al cargar los productios', 'No se han cargado Productos. :(');
             return;
           }
-          this.productList = data;
+          this.records = data;
+          this.productList = data.paginate(this.pageSize, 1);
         });
     }, 0);
   }
 
+  onSelectedPage(page: number) {
+    this.productList = this.records.paginate(this.pageSize, page);
+  }
 
 }

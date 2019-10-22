@@ -1,3 +1,7 @@
+// Added prototypes object
+import './app/util/number-helper';
+import './app/util/array-helper';
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

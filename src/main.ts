@@ -1,3 +1,4 @@
+// TODO: https://developers.google.com/web/fundamentals/architecture/app-shell
 // Added prototypes object
 import './app/util/number-helper';
 import './app/util/array-helper';

@@ -1,8 +1,12 @@
 <!-- Pagination -->
 <ng-container *ngIf="totalCount > 0">
     <nav class="pagination is-rounded m-l-30 m-r-35" role="navigation" aria-label="pagination">
-        <a class="pagination-previous" (click)="onSelectItem(previousPage)">Anterior</a>
-        <a class="pagination-next" (click)="onSelectItem(nextPage)">Siguiente</a>
+        <button class="pagination-previous" [disabled]="currentPage == 1" (click)="onSelectItem(previousPage)">
+            <span><em class="fa fa-chevron-left" aria-hidden="true"></em> Anterior</span>
+        </button>
+        <button class="pagination-next" [disabled]="currentPage == nextPage" (click)="onSelectItem(nextPage)">
+            <span>Siguiente <em class="fa fa-chevron-right" aria-hidden="true"></em></span>
+        </button>
         <ul class="pagination-list">
             <ng-container *ngFor="let page of numberPages.toArray()">
                 <li>
